@@ -1,0 +1,378 @@
+/*------------------------------------------------------------------
+Table of contents
+
+    I.      General
+    II.     Body
+    III.    Buttons
+
+-------------------------------------------------------------------
+[Color codes]
+
+Background:	#252525 Gradient #2d1c5b
+Content:	#FFF; (white)
+Footer:		#070707; (black)
+
+[Colors]
+Primary     #7449ff; (Purple)
+Accent      #4091CC (Sky Blue-ish)
+
+-------------------------------------------------------------------*/
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the vertical scrollbar */
+}
+
+/* The ::-webkit-scrollbar-track pseudo-elements affect the track (progress bar) of the scrollbar */
+::-webkit-scrollbar-track {
+    background: #2d1c5b;
+    /* Color of the tracking area */
+}
+
+/* The ::-webkit-scrollbar-thumb pseudo-elements affect the draggable scrolling handle */
+::-webkit-scrollbar-thumb {
+    background-color: #bf9b30;
+    /* Color of the scroll thumb */
+    border-radius: 20px;
+    /* Roundness of the scroll thumb */
+    border: 3px solid #2d1c5b;
+    /* Creates padding around scroll thumb */
+}
+
+
+
+
+/*-----------------------------
+
+    I. Fonts
+
+-----------------------------*/
+
+/* Font */
+@font-face {
+    font-family: 'Config';
+    src: url('fonts/Config-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Config';
+    src: url('https://doctorsoup143.github.io/Peeps-Website/fonts/Config-Regular.ttf') format('truetype');
+}
+
+
+
+.colored {
+    color: #7449ff;
+}
+
+.colored2 {
+    color: #4091CC;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+
+/*-----------------------------
+
+    II. Body
+
+-----------------------------*/
+
+body {
+    background: rgb(37, 37, 37);
+    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 40%, rgba(45, 28, 91, 1) 100%);
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.5rem;
+    /* 24px */
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Config';
+}
+
+.dropdown-menu .dropdown-item:hover {
+    transition: background-color 0.3s ease;
+    background-color: #000;
+}
+
+.nav-link {
+    transition: background-color 0.5s ease !important;
+}
+
+.nav-link:hover {
+    transition: background-color 0.5s ease !important;
+    color: #7449ff !important;
+}
+
+.border-purple {
+    border-color: #404040;
+}
+
+.glow {
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.glow:hover {
+    filter: drop-shadow(0 0 2em #7449ffaa);
+}
+
+.glow2 {
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.glow2:hover {
+    filter: drop-shadow(0 0 2em #4091CCf1);
+}
+
+.glow2:active {
+    filter: drop-shadow(0 0 2em #4091CCf1);
+}
+
+.glow-white {
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.glow-white:hover {
+    filter: drop-shadow(0 0 2em #ffffff6c);
+}
+
+
+
+/*-----------------------------
+
+    III. Buttons
+
+-----------------------------*/
+
+.btn-primary {
+    background-color: #7449ff;
+    border-color: #7449ff;
+    outline: none;
+}
+
+.btn-primary:hover {
+    background-color: #5C3ACC;
+    border-color: #5C3ACC;
+}
+
+
+.btn-outline-primary {
+    border-color: #7449ff;
+    color: #7449ff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #7449ff;
+    border-color: #7449ff;
+}
+
+.btn-outline-secondary {
+    border-color: #4091CC;
+    color: #4091CC;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #4091CC;
+    border-color: #4091CC;
+}
+
+
+
+
+/*-----------------------------
+
+    III. Animations
+
+-----------------------------*/
+
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 25%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.fade-in-up2 {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+
+
+
+/* Fade In Down Animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -25%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in-down {
+    opacity: 0;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/* Fade In Down Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/* Scroll R -> L Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.scroll-container {
+    overflow: hidden;
+}
+
+.scroll {
+    width: 200%;
+    /* Adjust according to the number of images */
+    overflow: visible;
+    white-space: nowrap;
+    animation: scroll 60s linear infinite;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+}
+
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gradient {
+    z-index: -1;
+    --size: 250px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+    width: 50%;
+    height: 70vh;
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(hsl(251, 100%, 74%), hsl(204, 58%, 50%));
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #222;
+    transition: all 0.25s ease-out;
+}
+
+
+@media (min-width: 720px) {
+    .gradient {
+        --size: 500px;
+    }
+}
+
+
+
+
+
+
+/*-----------------------------
+
+    III. Carousel
+
+-----------------------------*/
+
+
+.carousel-img {
+    height: 56.25vw;
+    /* 16:9 aspect ratio for mobile */
+    object-fit: cover;
+    /* Ensure the image covers the entire space */
+}
+
+@media (min-width: 768px) {
+
+    /* For tablets and above, use 16:9 aspect ratio based on viewport height */
+    .carousel-img {
+        height: 65vh;
+        /* 16:9 aspect ratio */
+    }
+}
+
+
+
+
