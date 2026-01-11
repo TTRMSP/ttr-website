@@ -118,8 +118,17 @@ body {
     transition: filter 300ms;
 }
 
+.glow-red {
+    will-change: filter;
+    transition: filter 300ms;
+}
+
 .glow:hover {
     filter: drop-shadow(0 0 2em #7449ffaa);
+}
+
+.glow-red:hover {
+    filter: drop-shadow(0 0 2em #b71c1caa);
 }
 
 .glow2 {
@@ -161,6 +170,30 @@ body {
 .btn-primary:hover {
     background-color: #5C3ACC;
     border-color: #5C3ACC;
+}
+
+.btn-blue {
+    background-color: #4091CC;
+    border-color: #4091CC;
+    color: white;
+    outline: none;
+}
+
+.btn-blue:hover {
+    background-color: #2C73A5;
+    border-color: #2C73A5;
+}
+
+.btn-red {
+    background-color: #B71C1C;
+    border-color: #B71C1C;
+    color: white;
+    outline: none;
+}
+
+.btn-red:hover {
+    background-color: #8D1616;
+    border-color: #8D1616;
 }
 
 
