@@ -18,6 +18,22 @@ Accent      #4091CC (Sky Blue-ish)
 
 -------------------------------------------------------------------*/
 
+/* Responsive navigation and content parity. */
+body .navbar .navbar-toggler-icon { filter: none !important; }
+body .navbar .navbar-toggler { min-width: 48px; min-height: 44px; }
+body .btn-ttr-primary { column-gap: .3em; }
+@media (max-width: 991px) {
+    body .navbar-collapse.show { max-height: calc(100dvh - 72px); overflow-y: auto; }
+    body.ttr-home .container.hero-wrap { padding-left: 20px; padding-right: 20px; }
+    body.dream .build-image { display: block !important; }
+    body.dream .image-caption { display: block !important; }
+}
+@media (max-width: 575px) {
+    body h1 { overflow-wrap: anywhere; }
+    body [class~="-right-6"] { right: 0; }
+    body [class~="-left-6"] { left: 0; }
+}
+
 /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 12px;
@@ -52,15 +68,9 @@ Accent      #4091CC (Sky Blue-ish)
 /* Font */
 @font-face {
     font-family: 'Config';
-    src: url('fonts/Config-Regular.ttf');
+    src: url('../fonts/Config-Regular.ttf') format('truetype');
+    font-display: swap;
 }
-
-@font-face {
-    font-family: 'Config';
-    src: url('https://doctorsoup143.github.io/Peeps-Website/fonts/Config-Regular.ttf') format('truetype');
-}
-
-
 
 .colored {
     color: #7449ff;
@@ -611,3 +621,12 @@ textarea.form-input { resize:none; }
 /* Veteran Lounge — Spec lists */
 .spec-list li     { display:flex; align-items:flex-start; gap:10px; color:rgb(156 163 175); font-size:14px; line-height:1.5; padding:5px 0; }
 .spec-list li svg { flex-shrink:0; margin-top:3px; }
+
+/* Charity navigation */
+body .navbar .ttr-charity-nav > button { background:transparent;border:0;font:inherit;cursor:pointer; }
+body .navbar .ttr-charity-nav .dropdown-menu { background:#0c1118;border:1px solid #f0c85b55;border-radius:8px;padding:8px;min-width:210px; }
+body .navbar .ttr-charity-nav .dropdown-item { color:#fff!important;border-radius:4px;padding:10px 14px; }
+body .navbar .ttr-charity-nav .dropdown-item:hover,body .navbar .ttr-charity-nav .dropdown-item:focus { background:#f0c85b!important;color:#090b0e!important; }
+body .navbar .ttr-charity-nav button:focus-visible { outline:2px solid #21d4ff;outline-offset:3px; }
+
+body .navbar .ttr-charity-nav > button:hover, body .navbar .ttr-charity-nav > button:focus, body .navbar .ttr-charity-nav > button.show { color:#f0c85b!important; }
