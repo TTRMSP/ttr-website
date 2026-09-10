@@ -31,6 +31,7 @@ body.dream{margin:0;background:#07090d;color:#fff;font-family:system-ui,-apple-s
 @media(max-width:991px){.dream-layout{grid-template-columns:1fr;gap:30px}.intro{position:static}.intro h1{max-width:650px;font-size:clamp(2.8rem,7vw,4.5rem)}.intro h1 span{display:inline}.intro>p{max-width:650px}.build-image,.image-caption{display:none}.help-link{border:0;padding:0}.dream-main{max-width:760px}}
 @media(max-width:575px){.dream-main{padding:26px 18px 50px}.dream-layout{margin-top:24px}.build-form{padding:24px 18px}.field-grid{grid-template-columns:1fr}.intro h1{font-size:2.9rem}.build-form legend{font-size:1.05rem}.dream-main .intro>p{font-size:1rem}}
 </style>
+<link rel="stylesheet" href="css/footer.css">
 </head>
 <body class="dream">
 <a class="skip-link" href="#build-form">Skip to build request</a>
@@ -176,48 +177,58 @@ body.dream{margin:0;background:#07090d;color:#fff;font-family:system-ui,-apple-s
 </form>
 </div>
 </main>
-<footer class="bg-dark py-5">
-<div class="container">
-<div class="row g-4">
-<div class="col-md-3">
-<a href="https://www.ttrmsp.com/">
-<img src="logos/TTRLogo.png" alt="TTR" width="100%">
-</a>
-<p class="muted text-center">© Total Tech Resources 2026<br>support@ttrmsp.com</p>
-</div>
-<div class="col-md-3">
-<h5 class="gold">Business Services</h5>
-<a class="d-block text-white" href="https://www.ttrmsp.com/BusinessServices">About</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport">24/7 Tech Support</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection">Data Protection</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport">Remote System Management</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring">24hr Monitoring</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/HardwareSales">Hardware Sales</a>
-</div>
-<div class="col-md-3">
-<h5 class="gold">Creator Services</h5>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CreatorServices">About</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport">24/7 Tech Support</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection">Data Protection</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement">Remote System Management</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring">24hr Monitoring</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware">Stream Software Optimization</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CreatorServices?hover=Studio">Studio Installation/Renovation</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/Contact">Hardware Sales</a>
-</div>
-<div class="col-md-3">
-<h5 class="gold">Custom Creations</h5>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CustomCreations">About</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/DreamPC">Personalized Dream Build</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/Contact">Hardware Sales</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/CustomCreationsConsultation">Schedule Free Consultation</a>
-<a class="d-block text-white" href="https://www.ttrmsp.com/FAQ">FAQ</a>
-</div>
-</div>
-<div class="text-center mt-4">
-<a class="btn btn-outline-primary" href="https://doctorsoup143.github.io/Portfolio-Website/">Designed by Sean D.</a>
-</div>
-</div>
+<footer class="ttr-footer" id="site-footer" aria-label="Site footer">
+  <div class="ttr-footer__inner">
+    <div class="ttr-footer__grid">
+      <div class="ttr-footer__brand">
+        <a class="ttr-footer__logo" href="https://www.ttrmsp.com/" aria-label="Total Tech Resources home"><img src="logos/TTRLogo.png" alt="Total Tech Resources" width="180" loading="lazy"></a>
+        <p>Your <span class="ttr-footer__it">IT</span> department.<br>Your creative potential.<br>Your next custom build.</p>
+        <a class="ttr-footer__email" href="mailto:support@ttrmsp.com">support@ttrmsp.com</a>
+      </div>
+      <nav class="ttr-footer__column" aria-label="Footer business services">
+        <h2>Business</h2>
+        <ul>
+          <li><a href="https://www.ttrmsp.com/BusinessServices">Business Services</a></li>
+          <li><a href="https://www.ttrmsp.com/Consultation">Free <span class="ttr-footer__it">IT</span> Assessment</a></li>
+          <li><a href="https://www.ttrmsp.com/HardwareSales">Hardware Sales</a></li>
+        </ul>
+        <details><summary>Explore services</summary><ul class="ttr-footer__details">
+          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport">24/7 Tech Support</a></li>
+          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection">Data Protection</a></li>
+          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport">Remote System Management</a></li>
+          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring">24hr Monitoring</a></li>
+        </ul></details>
+      </nav>
+      <nav class="ttr-footer__column" aria-label="Footer creator services">
+        <h2>Creators</h2>
+        <ul>
+          <li><a href="https://www.ttrmsp.com/CreatorServices">Creator Services</a></li>
+          <li><a href="https://www.ttrmsp.com/CreatorContact">Creator Contact</a></li>
+        </ul>
+        <details><summary>Explore services</summary><ul class="ttr-footer__details">
+          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport">24/7 Tech Support</a></li>
+          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection">Data Protection</a></li>
+          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement">Remote System Management</a></li>
+          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring">24hr Monitoring</a></li>
+          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware">Stream Software Optimization</a></li>
+          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=Studio">Studio Installation / Renovation</a></li>
+        </ul></details>
+      </nav>
+      <nav class="ttr-footer__column" aria-label="Footer custom creations">
+        <h2>Custom PCs</h2>
+        <ul>
+          <li><a href="https://www.ttrmsp.com/CustomCreations">Custom Creations</a></li>
+          <li><a href="https://www.ttrmsp.com/DreamPC">Dream PC Builder</a></li>
+          <li><a href="https://www.ttrmsp.com/CustomCreationsConsultation">Free Build Consultation</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="ttr-footer__bottom">
+      <p>© 2026 Total Tech Resources</p>
+      <nav aria-label="Footer company links"><a href="https://www.ttrmsp.com/About">About TTR</a><a href="https://www.ttrmsp.com/Contact">Contact</a><a href="https://www.ttrmsp.com/FAQ">FAQ</a></nav>
+      <a class="ttr-footer__credit" href="https://doctorsoup143.github.io/Portfolio-Website/">Designed by Sean D.</a>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
