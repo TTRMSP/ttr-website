@@ -1,502 +1,391 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-
-    <!-- No Cache -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-
-    <!-- Page Title -->
-    <title>TTR | Managed It Services</title>
-    <!-- Meta Stuff -->
+    <title>Why TTR | Total Tech Resources</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-
-    <!-- Stylesheets -->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <!-- General Tags -->
     <meta name="author" content="DoctorSoup143">
     <meta property="og:image" content="https://www.ttrmsp.com/logos/TTRLogo.png">
-    <meta property="og:description"
-        content="Total Tech Resources Managed IT Services team (TTRMSP) has 80 years of combined experience. We're here to improve your business's tech support & enhance your technology infrastructure, giving you peace of mind.">
+    <meta property="og:description" content="Learn why Total Tech Resources takes a business first approach to managed IT, with hands on experience, 24/7 availability, clear accountability and technology planning built around your company.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="TTR | Managed It Services">
+    <meta property="og:title" content="Why TTR | Total Tech Resources">
     <meta property="og:site_name" content="Total Tech Resources">
-    <meta property="og:url" content="https://www.ttrmsp.com">
-    <meta name="description"
-        content="Total Tech Resources Managed IT Services team (TTRMSP) has 80 years of combined experience. We're here to improve your business's tech support & enhance your technology infrastructure, giving you peace of mind.">
-        <meta name="keywords"
-        content="TTR, TTRMSP, total tech resources, pc builder, managed IT service, IT support for businesses, data backup, IT services, msp, managed service provider, managed service provider it, small business msp, small business managed service provider, streamer IT support, IT support, streaming pc, msp, managed service provider, tech help, obs tech help, how to setup obs">
-        
-    <!-- Twitter Tags -->
+    <meta property="og:url" content="https://www.ttrmsp.com/About">
+    <meta name="description" content="Learn why Total Tech Resources takes a business first approach to managed IT, with hands on experience, 24/7 availability, clear accountability and technology planning built around your company.">
+    <meta name="keywords" content="Total Tech Resources, TTRMSP, managed IT, IT support, managed service provider, business IT, technology consulting, 24/7 IT support">
     <meta name="twitter:image" content="logos/TTR Logo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TTR | Managed It Services">
-    <meta name="twitter:description"
-        content="Total Tech Resources Managed IT Services team (TTRMSP) has 80 years of combined experience. We're here to improve your business's tech support & enhance your technology infrastructure, giving you peace of mind.">
-    <meta name="twitter:site" content="@TWITTER HANDLE">
-
-    <!-- Embed Theme Color -->
-    <meta name="theme-color" content="#2d1c5b">
-
-    <!-- Favicon and Apple Icons -->
+    <meta name="twitter:title" content="Why TTR | Total Tech Resources">
+    <meta name="twitter:description" content="Business first managed IT, clear accountability and hands on technology support from Total Tech Resources.">
+    <meta name="theme-color" content="#07090d">
     <link rel="apple-touch-icon" sizes="180x180" href="https://www.ttrmsp.com/logos/TTRIcon.png">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="https://www.ttrmsp.com/logos/TTRIcon.png">
-    <link rel="icon" type="image/png" sizes="96x96"
-        href="https://www.ttrmsp.com/logos/TTRIcon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.ttrmsp.com/logos/TTRIcon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.ttrmsp.com/logos/TTRIcon.png">
 
-    <script>
-        window.onload = function () {
-            var urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('hover')) {
-                var elementId = urlParams.get('hover');
-                var element = document.getElementById(elementId);
-                if (element) {
-                    // Add the new class to the element
-                    element.classList.add('glow2-active');
-
-                    // Scroll to the element
-                    element.scrollIntoView({ behavior: "smooth", block: "center" });
-                }
-            }
-        };
-    </script>
-
+    <style>
+        :root {
+            --ttr-gold: #d9a92e;
+            --ttr-gold-light: #f0c85b;
+            --ttr-cyan: #21d4ff;
+            --ttr-bg: #07090d;
+            --ttr-panel: #10151d;
+            --ttr-panel-2: #151c26;
+            --ttr-text: #f5f7fa;
+            --ttr-muted: #aeb8c5;
+        }
+        body.ttr-about { background: var(--ttr-bg); color: var(--ttr-text); overflow-x: hidden; }
+        .ttr-about .navbar { border-bottom: 1px solid rgba(255,255,255,.08); box-shadow: 0 10px 30px rgba(0,0,0,.22); }
+        .ttr-about .navbar-toggler { border-color: rgba(255,255,255,.35); }
+        .ttr-about .navbar-toggler-icon { filter: invert(1); }
+        .ttr-about .dropdown-item:hover, .ttr-about .dropdown-item:focus { background: #202833; }
+        .ttr-about .nav-link { font-weight: 600; }
+        .ttr-about .nav-link:hover { color: var(--ttr-cyan) !important; }
+        .ttr-about .page-hero { position: relative; overflow: hidden; padding: 115px 0 105px; border-bottom: 1px solid rgba(255,255,255,.07); }
+        .ttr-about .page-hero::before { content: ""; position: absolute; width: 720px; height: 720px; border-radius: 50%; background: radial-gradient(circle, rgba(33,212,255,.12), rgba(33,212,255,0) 68%); top: -360px; right: -120px; pointer-events: none; }
+        .ttr-about .page-hero::after { content: ""; position: absolute; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(217,169,46,.10), rgba(217,169,46,0) 70%); left: -240px; bottom: -360px; pointer-events: none; }
+        .ttr-about .hero-content { position: relative; z-index: 2; max-width: 1020px; }
+        .ttr-about .eyebrow { display: inline-flex; align-items: center; gap: 9px; padding: 7px 12px; border: 1px solid rgba(33,212,255,.35); border-radius: 999px; color: #c9f6ff; background: rgba(33,212,255,.06); text-transform: uppercase; letter-spacing: .13em; font-size: .75rem; font-weight: 800; }
+        .ttr-about .hero-title { font-size: clamp(3.1rem, 7vw, 6.5rem); line-height: .95; font-weight: 900; letter-spacing: -.045em; margin: 25px 0 24px; }
+        .ttr-about .gold { color: var(--ttr-gold-light); }
+        .ttr-about .it-pop { color: var(--ttr-cyan); text-shadow: 0 0 16px rgba(33,212,255,.65), 0 0 34px rgba(33,212,255,.22); }
+        .ttr-about .hero-copy { color: var(--ttr-muted); font-size: clamp(1.06rem,1.6vw,1.28rem); line-height: 1.7; max-width: 830px; }
+        .ttr-about .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; }
+        .ttr-about .btn-ttr-primary, .ttr-about .btn-ttr-secondary { padding: 14px 21px; border-radius: 8px; font-weight: 800; text-decoration: none; transition: .2s ease; display: inline-flex; align-items: center; justify-content: center; }
+        .ttr-about .btn-ttr-primary { background: linear-gradient(135deg, var(--ttr-gold-light), #c58c17); color: #090b0e; border: 1px solid rgba(255,255,255,.1); box-shadow: 0 12px 35px rgba(217,169,46,.18); }
+        .ttr-about .btn-ttr-primary:hover { transform: translateY(-2px); color: #090b0e; box-shadow: 0 16px 40px rgba(217,169,46,.26); }
+        .ttr-about .btn-ttr-secondary { color: white; border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.035); }
+        .ttr-about .btn-ttr-secondary:hover { color: var(--ttr-cyan); border-color: rgba(33,212,255,.5); transform: translateY(-2px); }
+        .ttr-about .quick-strip { background: #0b0e13; border-bottom: 1px solid rgba(255,255,255,.06); }
+        .ttr-about .quick-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+        .ttr-about .quick-item { padding: 25px 22px; border-right: 1px solid rgba(255,255,255,.07); text-align: center; }
+        .ttr-about .quick-item:last-child { border-right: 0; }
+        .ttr-about .quick-item strong { display: block; font-size: 1.3rem; color: #fff; }
+        .ttr-about .quick-item span { color: #8793a2; font-size: .88rem; }
+        .ttr-about .section-pad { padding: 90px 0; }
+        .ttr-about .section-dark { background: #0b0f15; }
+        .ttr-about .section-heading { max-width: 900px; margin-bottom: 38px; }
+        .ttr-about .section-heading h2 { font-size: clamp(2.1rem,4vw,3.8rem); font-weight: 900; line-height: 1.04; letter-spacing: -.03em; margin: 15px 0; }
+        .ttr-about .section-heading p { color: var(--ttr-muted); font-size: 1.08rem; line-height: 1.72; }
+        .ttr-about .cards { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+        .ttr-about .card-ttr { background: var(--ttr-panel); border: 1px solid rgba(255,255,255,.08); border-radius: 15px; padding: 26px; min-height: 270px; transition: .2s ease; }
+        .ttr-about .card-ttr:hover { transform: translateY(-4px); border-color: rgba(33,212,255,.28); }
+        .ttr-about .card-icon { width: 48px; height: 48px; border-radius: 11px; display: grid; place-items: center; background: rgba(33,212,255,.08); border: 1px solid rgba(33,212,255,.22); color: var(--ttr-cyan); font-weight: 900; font-size: 1.05rem; margin-bottom: 18px; }
+        .ttr-about .card-ttr h3 { font-size: 1.18rem; font-weight: 850; color: white; }
+        .ttr-about .card-ttr p { color: var(--ttr-muted); line-height: 1.65; margin-bottom: 0; }
+        .ttr-about .philosophy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+        .ttr-about .philosophy-panel { background: linear-gradient(180deg,#111720,#0d1218); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 31px; }
+        .ttr-about .principle { padding: 19px 0; border-bottom: 1px solid rgba(255,255,255,.07); }
+        .ttr-about .principle:first-child { padding-top: 0; }
+        .ttr-about .principle:last-child { border-bottom: 0; padding-bottom: 0; }
+        .ttr-about .principle h3 { font-size: 1.13rem; font-weight: 850; margin-bottom: 8px; color: white; }
+        .ttr-about .principle p { color: var(--ttr-muted); line-height: 1.63; margin: 0; }
+        .ttr-about .outcome-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+        .ttr-about .outcome { background: var(--ttr-panel); border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 27px; }
+        .ttr-about .outcome i { color: var(--ttr-gold-light); font-size: 1.5rem; }
+        .ttr-about .outcome h3 { font-size: 1.2rem; font-weight: 850; margin: 14px 0 9px; }
+        .ttr-about .outcome p { color: var(--ttr-muted); line-height: 1.63; margin: 0; }
+        .ttr-about .belief-band { padding: 82px 0; background: linear-gradient(135deg, rgba(217,169,46,.12), rgba(33,212,255,.06)); border-top: 1px solid rgba(255,255,255,.07); border-bottom: 1px solid rgba(255,255,255,.07); }
+        .ttr-about .belief-box { display: grid; grid-template-columns: 1.2fr .8fr; gap: 35px; align-items: center; }
+        .ttr-about .belief-box h2 { font-size: clamp(2.1rem,4vw,3.7rem); line-height: 1.04; font-weight: 900; letter-spacing: -.03em; }
+        .ttr-about .belief-box p { color: var(--ttr-muted); font-size: 1.08rem; line-height: 1.7; }
+        .ttr-about .belief-points { background: rgba(5,7,10,.55); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 28px; }
+        .ttr-about .belief-points div { padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,.07); color: #dce2e9; font-weight: 700; }
+        .ttr-about .belief-points div:last-child { border-bottom: 0; }
+        .ttr-about .belief-points i { color: var(--ttr-cyan); margin-right: 10px; }
+        .ttr-about .final-cta { padding: 92px 0; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(33,212,255,.1), transparent 45%), #0c1016; }
+        .ttr-about .final-cta h2 { font-size: clamp(2.2rem,4vw,4.2rem); font-weight: 900; max-width: 900px; margin: 0 auto 18px; }
+        .ttr-about .final-cta p { max-width: 720px; margin: 0 auto 30px; color: var(--ttr-muted); font-size: 1.08rem; }
+        .ttr-about footer { border-top: 1px solid rgba(255,255,255,.06); }
+        @media (max-width: 991px) {
+            .ttr-about .page-hero { padding: 78px 0 72px; }
+            .ttr-about .quick-grid, .ttr-about .cards { grid-template-columns: repeat(2,1fr); }
+            .ttr-about .philosophy-grid, .ttr-about .belief-box { grid-template-columns: 1fr; }
+            .ttr-about .outcome-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 575px) {
+            .ttr-about .hero-title { font-size: 3.15rem; }
+            .ttr-about .quick-grid, .ttr-about .cards { grid-template-columns: 1fr; }
+            .ttr-about .quick-item { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.07); }
+            .ttr-about .hero-actions a { width: 100%; }
+            .ttr-about .section-pad { padding: 65px 0; }
+        }
+    </style>
 </head>
+<body class="ttr-about">
 
-
-
-<body>
-
-    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-black sticky-top">
         <div class="container-fluid">
-            <!-- Company Name Link -->
             <a class="navbar-brand" href="https://www.ttrmsp.com/">
                 <img src="logos/TTRIcon.png" alt="Logo" width="auto" height="30" class="d-inline-block align-text-top">
             </a>
-            <!-- Collapse Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Navbar Items -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                    <li class="ms-3 nav-item">
-                        <a class="nav-link active text-white" aria-current="page"
-                            href="https://www.ttrmsp.com/">Home</a>
-                    </li>
-
-                    <li class="ms-3 nav-item">
-                        <a class="nav-link text-white"
-                            href="https://www.ttrmsp.com/About">About</a>
-                    </li>
-
+                    <li class="ms-3 nav-item"><a class="nav-link text-white" href="https://www.ttrmsp.com/">Home</a></li>
+                    <li class="ms-3 nav-item"><a class="nav-link active text-white" aria-current="page" href="https://www.ttrmsp.com/About">About</a></li>
                     <li class="ms-3 nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white"
-                            href="https://www.ttrmsp.com/BusinessServices" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Business Services
-                        </a>
+                        <a class="nav-link dropdown-toggle text-white" href="https://www.ttrmsp.com/BusinessServices" role="button" data-bs-toggle="dropdown" aria-expanded="false">Business Services</a>
                         <ul class="dropdown-menu bg-dark">
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/BusinessServices">About</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport">24/7
-                                    Tech.
-                                    Support</a>
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection">Data
-                                    Protection</a></li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport">Remote
-                                    System
-                                    Management</a></li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring">24hr
-                                    Monitoring</a></li>
-                            <li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/HardwareSales">Hardware
-                                    Sales</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/BusinessServices">About</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport">24/7 Tech. Support</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection">Data Protection</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport">Remote System Management</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring">24hr Monitoring</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/HardwareSales">Hardware Sales</a></li>
                         </ul>
                     </li>
-
                     <li class="ms-3 nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Creator Services
-                        </a>
-                        <ul class="dropdown-menu bg-dark ">
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CreatorServices">About</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport">24/7
-                                    Tech.
-                                    Support</a>
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection">Data
-                                    Protection</a></li>
-                            <li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement">Remote
-                                    System
-                                    Management</a></li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring">24hr
-                                    Monitoring</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware">Stream
-                                    Software
-                                    Optimization</a></li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CreatorServices?hover=Studio">Studio
-                                    Installation/Renovation</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/Contact">Hardware
-                                    Sales</a></li>
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Creator Services</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CreatorServices">About</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport">24/7 Tech. Support</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection">Data Protection</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement">Remote System Management</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring">24hr Monitoring</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware">Stream Software Optimization</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CreatorServices?hover=Studio">Studio Installation/Renovation</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/Contact">Hardware Sales</a></li>
                         </ul>
                     </li>
-
                     <li class="ms-3 nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white"
-                            href="https://www.ttrmsp.com/CustomCreations" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Custom Creations
-                        </a>
-                        <ul class="dropdown-menu bg-dark ">
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CustomCreations">About</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/DreamPC">Personalized Dream
-                                    Build</a></li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/Contact">Hardware
-                                    Sales</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-white"
-                                    href="https://www.ttrmsp.com/CustomCreationsConsultation">Schedule
-                                    Free Consultation</a></li>
+                        <a class="nav-link dropdown-toggle text-white" href="https://www.ttrmsp.com/CustomCreations" role="button" data-bs-toggle="dropdown" aria-expanded="false">Custom Creations</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CustomCreations">About</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/DreamPC">Personalized Dream Build</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/Contact">Hardware Sales</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CustomCreationsConsultation">Schedule Free Consultation</a></li>
                         </ul>
                     </li>
-
-                    <li class="ms-3 nav-item">
-                        <a class="nav-link text-white"
-                            href="https://www.ttrmsp.com/Contact">Contact</a>
-                    </li>
-
-                    <li class="ms-3 nav-item">
-                        <a class="nav-link text-white" href="https://www.ttrmsp.com/FAQ">FAQ</a>
-                    </li>
-
+                    <li class="ms-3 nav-item"><a class="nav-link text-white" href="https://www.ttrmsp.com/Contact">Contact</a></li>
+                    <li class="ms-3 nav-item"><a class="nav-link text-white" href="https://www.ttrmsp.com/FAQ">FAQ</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Spacing -->
-    <br /><br />
-
-    <!-- About Landing Section -->
-    <div class="container">
-
-        <div class="px-4 py-5 my-3 text-center">
-            <img class="col-lg-6 col-sm-12 d-block mx-auto mb-0 fade-in-down" src="logos/TTRLogo.png" alt=""
-                width="100%" height="auto">
-            <div class="col-lg-6 mx-auto">
-                <h1 class="mb-1 mt-5 fade-in">Industries We Empower</h1>
-            </div>
-        </div>
-
-        <!-- Legal IT Services -->
-        <div class="row fade-in-up">
-            <div class="col-md-12 col-lg-6 mb-1 glow2">
-                <div class="h-100 px-5 pt-4 text-bg-dark rounded-3">
-                    <h2 class="">
-                        <i class="bi bi-buildings text-warning"></i> Legal
-                    </h2>
-                    <p class="fs-6">
-
-                        Leverage Total Tech Resources Technologies' IT services to elevate productivity, streamline
-                        internal communication, and fortify data protection in your legal practice. Our tailored
-                        solutions optimize workflows, granting you more time to focus on providing exemplary service to
-                        your clients. With a steadfast commitment to data security, our services ensure that sensitive
-                        legal information remains protected against cyber threats and breaches. Entrust us to guide you
-                        through the integration of cutting-edge technologies that enhance your operations and bolster
-                        your ability to deliver unparalleled legal services. Choose Total Tech Resources Technologies as
-                        your partner for transformative IT solutions, empowering your legal practice to thrive in the
-                        digital age while safeguarding client confidentiality.
-                    </p>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="eyebrow"><i class="bi bi-people"></i> Why Total Tech Resources</span>
+                    <h1 class="hero-title"><span class="gold">BUSINESS FIRST.</span><br>TECHNOLOGY SECOND.</h1>
+                    <p class="hero-copy">Every technology recommendation should answer a business question. Does it reduce risk, save time, improve reliability, support growth or make your company easier to operate? Technology for technology's sake is not the goal.</p>
+                    <div class="hero-actions">
+                        <a class="btn-ttr-primary" href="https://www.ttrmsp.com/Consultation">Free <span class="it-pop">IT</span>&nbsp; Assessment&nbsp; <i class="bi bi-arrow-right"></i></a>
+                        <a class="btn-ttr-secondary" href="https://www.ttrmsp.com/BusinessServices">Explore Business Services</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-6">
-                <img class="d-block mx-auto rounded-3 mb-1" src="images/Buildings.jpg" alt="" width="100%"
-                    height="auto">
-            </div>
-        </div>
+        </section>
 
-        <!-- Healthcare IT Services -->
-        <div class="row fade-in-up mt-4">
-            <div class="col-md-12 col-lg-6">
-                <img class="d-block mx-auto rounded-3 mb-1" src="images/HealthcareIT.jpg" alt="" width="100%"
-                    height="auto">
-            </div>
-            <div class="col-md-12 col-lg-6 mb-1 glow2">
-                <div class="h-100 px-5 pt-4 text-bg-dark rounded-3">
-                    <h2 class="">
-                        <i class="bi bi-hospital text-danger"></i> Healthcare
-                    </h2>
-                    <p class="fs-6">
-                        In the highly regulated healthcare industry, our experienced technical staff offers unrivaled
-                        expertise in HIPAA compliance, security, policies and procedures, staff training, breach
-                        response requirements, and more. With a deep understanding of these critical areas, we provide
-                        peace of mind to our clients, ensuring that their operations meet and exceed regulatory
-                        standards. Our team is dedicated to safeguarding sensitive data and maintaining the integrity of
-                        systems through robust security measures and regular audits. We go beyond mere compliance,
-                        offering tailored staff training programs to empower teams with the skills needed to excel while
-                        staying compliant. In the event of a breach, our swift and decisive response minimizes
-                        disruption and ensures organizational resilience. Choose us as your partner in healthcare
-                        technology, and trust in our commitment to navigating the complexities of the industry with
-                        precision and care.
-                    </p>
+        <section class="quick-strip">
+            <div class="container">
+                <div class="quick-grid">
+                    <div class="quick-item"><strong>30+ Years</strong><span>Hands On Technology Experience</span></div>
+                    <div class="quick-item"><strong>24 / 7 / 365</strong><span>Support Availability</span></div>
+                    <div class="quick-item"><strong>One Team</strong><span>Clear Accountability</span></div>
+                    <div class="quick-item"><strong>Tailored</strong><span>Built Around Your Business</span></div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Manufacturing IT Services -->
-        <div class="row fade-in-up mt-4">
-            <div class="col-md-12 col-lg-6 mb-1 glow2">
-                <div class="h-100 px-5 pt-4 text-bg-dark rounded-3">
-                    <h2 class="">
-                        <i class="bi bi-gear text-success"></i> Manufacturing
-                    </h2>
-                    <p class="fs-6">
-                        Enhance your manufacturing operations with our specialized IT services. Allow us to introduce
-                        cutting-edge technology solutions tailored to streamline processes, minimize errors, and align
-                        with customer demand seamlessly. Rely on our expertise to optimize efficiencies and drive
-                        profitability within your manufacturing environment. Choose our services to unlock the potential
-                        of technology in maximizing your operational performance and financial success. Let us be your
-                        partner in leveraging technology to propel your manufacturing capabilities to new heights.
-                    </p>
+        <section class="section-pad">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Founder Led. Hands On.</span>
+                    <h2>Built by people who have spent <span class="gold">decades solving real technology problems.</span></h2>
+                    <p>Total Tech Resources is not designed to feel like a faceless national call center. The value is direct access to an experienced team, clear accountability and a technology partner that can move from user support to infrastructure planning without sending you through a maze of disconnected vendors.</p>
+                </div>
+                <div class="cards">
+                    <article class="card-ttr">
+                        <div class="card-icon">30+</div>
+                        <h3>Experience Matters</h3>
+                        <p>Decades of hands on technology experience across support, infrastructure, hardware and business operations.</p>
+                    </article>
+                    <article class="card-ttr">
+                        <div class="card-icon">24</div>
+                        <h3>Availability Matters</h3>
+                        <p>Your business does not stop at 5 PM. TTR's support model is built around 24/7/365 availability.</p>
+                    </article>
+                    <article class="card-ttr">
+                        <div class="card-icon"><i class="bi bi-person-check"></i></div>
+                        <h3>Ownership Matters</h3>
+                        <p>One accountable technology partner is easier to manage than a collection of disconnected providers pointing at each other.</p>
+                    </article>
+                    <article class="card-ttr">
+                        <div class="card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h3>Growth Matters</h3>
+                        <p>Good IT planning should help the company move forward, not simply keep yesterday's equipment alive.</p>
+                    </article>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-6">
-                <img class="d-block mx-auto rounded-3 mb-1" src="images/Manufacturing.jpg" alt="" width="100%"
-                    height="auto">
-            </div>
-        </div>
+        </section>
 
-        <!-- Small Business IT Services -->
-        <div class="row fade-in-up mt-4">
-            <div class="col-md-12 col-lg-6">
-                <img class="d-block mx-auto rounded-3 mb-1" src="images/Store.jpg" alt="" width="100%" height="auto">
-            </div>
-            <div class="col-md-12 col-lg-6 mb-1 glow2">
-                <div class="h-100 px-5 pt-4 text-bg-dark rounded-3">
-                    <h2 class="">
-                        <i class="bi bi-shop text-info"></i> Small Business
-                    </h2>
-                    <p class="fs-6">
-                        Total Tech Resources (TTR) does service small businesses. Our partnership philosophy emphasizes
-                        inclusivity and flexibility, ensuring that we cater to organizations of all sizes. We value the
-                        individual needs and objectives of each business we work with, prioritizing their success above
-                        financial gains. Our approach involves customizing services to address the unique challenges
-                        faced by small businesses, fostering meaningful relationships based on mutual respect and shared
-                        goals. Through this tailored approach, we aim to deliver tangible results that support the
-                        growth and prosperity of small businesses.
-                    </p>
+        <section class="section-pad section-dark">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">Our Operating Philosophy</span>
+                    <h2>What you should expect from <span class="gold">TTR.</span></h2>
+                    <p>Managed IT should make the business easier to run. That means the technology has to support the company, not become another project leadership has to manage.</p>
+                </div>
+                <div class="philosophy-grid">
+                    <div class="philosophy-panel">
+                        <div class="principle">
+                            <h3>Business First</h3>
+                            <p>We start with the company's goals, workload and risk, then recommend technology that supports them.</p>
+                        </div>
+                        <div class="principle">
+                            <h3>Clear Accountability</h3>
+                            <p>You should know who owns the problem and what happens next. TTR is designed to reduce vendor finger pointing.</p>
+                        </div>
+                        <div class="principle">
+                            <h3>Proactive Over Reactive</h3>
+                            <p>Support matters, but prevention, monitoring and planning are what make managed IT valuable.</p>
+                        </div>
+                    </div>
+                    <div class="philosophy-panel">
+                        <div class="principle">
+                            <h3>No Unnecessary Spend</h3>
+                            <p>The right answer is not always buying something new. We recommend what the environment actually needs and prioritize what matters most.</p>
+                        </div>
+                        <div class="principle">
+                            <h3>Long Term Partnership</h3>
+                            <p>The relationship works when TTR understands the business well enough to make better technology decisions over time.</p>
+                        </div>
+                        <div class="principle">
+                            <h3>Direct Communication</h3>
+                            <p>Complex technology should be explained clearly enough that business leadership can make informed decisions without needing to become IT experts.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Content Creator IT Services -->
-        <div class="row fade-in-up mt-4">
-            <div class="col-md-12 col-lg-6 mb-1 glow2">
-                <div class="h-100 px-5 pt-4 text-bg-dark rounded-3">
-                    <h2 class="">
-                        <i class="bi bi-person-bounding-box colored"></i> Content Creators
-                    </h2>
-                    <p class="fs-6">
-                        TTRMSP offers comprehensive IT services designed to elevate content creators' experiences. From
-                        round-the-clock tech support and data protection to remote system management and 24/7
-                        monitoring, we ensure uninterrupted operations and safeguard your creative assets. Our stream
-                        software optimization services enhance broadcasting quality and efficiency, focusing on popular
-                        platforms like OBS. Additionally, our studio renovation expertise tailors spaces to meet the
-                        unique needs of content creators, whether refreshing existing workspaces or starting anew.
-                        Partner with TTRMSP to unlock the full potential of your content creation journey.
-                    </p>
+        <section class="section-pad">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">What That Means For Your Business</span>
+                    <h2>Less time managing technology. <span class="gold">More time running the company.</span></h2>
+                </div>
+                <div class="outcome-grid">
+                    <article class="outcome">
+                        <i class="bi bi-speedometer2"></i>
+                        <h3>Fewer Interruptions</h3>
+                        <p>Proactive monitoring, management and support are designed to reduce avoidable downtime and keep employees productive.</p>
+                    </article>
+                    <article class="outcome">
+                        <i class="bi bi-shield-check"></i>
+                        <h3>Better Risk Visibility</h3>
+                        <p>You should understand where your business is exposed, what matters most and which risks actually deserve attention first.</p>
+                    </article>
+                    <article class="outcome">
+                        <i class="bi bi-diagram-3"></i>
+                        <h3>One Technology Partner</h3>
+                        <p>Support, infrastructure, devices, vendors and planning work better when one accountable team understands the whole environment.</p>
+                    </article>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-6">
-                <img class="d-block mx-auto rounded-3 mb-1" src="images/Gaming.jpg" alt="" width="100%" height="auto">
+        </section>
+
+        <section class="belief-band">
+            <div class="container">
+                <div class="belief-box">
+                    <div>
+                        <span class="eyebrow">How We Think About Managed IT</span>
+                        <h2 class="mt-3">No canned package. No one size fits all answer.</h2>
+                        <p>Two companies with the same number of employees can have completely different technology needs. Your locations, systems, security requirements, workflows, vendors and growth plans all matter. TTR starts by understanding the environment, then builds the relationship around what your business actually needs.</p>
+                    </div>
+                    <div class="belief-points">
+                        <div><i class="bi bi-check-circle-fill"></i> Understand the business first</div>
+                        <div><i class="bi bi-check-circle-fill"></i> Prioritize the real risks</div>
+                        <div><i class="bi bi-check-circle-fill"></i> Build around the environment</div>
+                        <div><i class="bi bi-check-circle-fill"></i> Explain the why clearly</div>
+                        <div><i class="bi bi-check-circle-fill"></i> Stay accountable after the sale</div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-    </div>
+        <section class="final-cta">
+            <div class="container">
+                <span class="eyebrow">Start With Your Current Environment</span>
+                <h2>Want to see whether TTR is the right <span class="it-pop">IT</span> partner?</h2>
+                <p>Start with the environment, not a sales pitch. Tell us how your company operates today and we will begin with a free IT assessment.</p>
+                <a class="btn-ttr-primary" href="https://www.ttrmsp.com/Consultation">Free <span class="it-pop">IT</span>&nbsp; Assessment&nbsp; <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
 
-
-
-    <!-- Business Consultation -->
-    <div class="px-4 py-5 mt-5 text-center fade-in-up">
-        <div class="col-lg-6 mx-auto">
-            <h1 class=" mb-1 fade-in">Ready to <span class="text-info">Embrace</span> a More Digital Business Model?
-            </h1>
-            <button class="btn btn-outline-light glow-white my-3" type="button"
-                onclick="window.location.href = 'https://www.ttrmsp.com/Consultation';">Schedule
-                a Consultation</button>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Footer -->
     <div class="container-fluid bg-dark">
         <footer>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-5 mb-1">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 mt-0 mb-1">
                 <div class="col mb-5 mb-lg-0">
-                    <a href="https://www.ttrmsp.com/"
-                        class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-                        <img class="d-block" src="logos/TTRLogo.png" alt="" width="100%" height="auto">
+                    <a href="https://www.ttrmsp.com/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                        <img class="d-block" src="logos/TTRLogo.png" alt="Total Tech Resources" width="100%" height="auto">
                     </a>
-                    <p class="text-white text-center">
-                        © Total Tech Resources 2024
-                        <br />
-                        support@ttrmsp.com
-                    </p>
+                    <p class="text-white text-center">© Total Tech Resources 2026<br />support@ttrmsp.com</p>
                 </div>
-
-                <div class="col mb-3 mb-lg-0">
-                    <!-- Spacer -->
-                </div>
-
+                <div class="col mb-3 mb-lg-0"></div>
                 <div class="col mb-5 mb-lg-0">
                     <h5 class="colored2">Business Services</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices"
-                                class="nav-link p-0 text-white">About</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport"
-                                class="nav-link p-0 text-white">24/7 Tech Support</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection"
-                                class="nav-link p-0 text-white">Data Protection</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport"
-                                class="nav-link p-0 text-white">Remote System Management</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring"
-                                class="nav-link p-0 text-white">24hr Monitoring</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/Contact"
-                                class="nav-link p-0 text-white">Hardware Sales</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport" class="nav-link p-0 text-white">24/7 Tech Support</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection" class="nav-link p-0 text-white">Data Protection</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport" class="nav-link p-0 text-white">Remote System Management</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring" class="nav-link p-0 text-white">24hr Monitoring</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/Contact" class="nav-link p-0 text-white">Hardware Sales</a></li>
                     </ul>
                 </div>
-
                 <div class="col mb-5 mb-lg-0">
                     <h5 class="colored2">Creator Services</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices"
-                                class="nav-link p-0 text-white">About</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport"
-                                class="nav-link p-0 text-white">24/7 Tech Support</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection"
-                                class="nav-link p-0 text-white">Data Protection</a>
-                        </li>
-                        <li class="nav-item mb-2"><a
-                                href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement"
-                                class="nav-link p-0 text-white">Remote System Management</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring"
-                                class="nav-link p-0 text-white">24hr Monitoring</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware"
-                                class="nav-link p-0 text-white">Stream Software Optimization</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=Studio"
-                                class="nav-link p-0 text-white">Studio Installation/Renovation</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/Contact"
-                                class="nav-link p-0 text-white">Hardware Sales</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport" class="nav-link p-0 text-white">24/7 Tech Support</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection" class="nav-link p-0 text-white">Data Protection</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement" class="nav-link p-0 text-white">Remote System Management</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring" class="nav-link p-0 text-white">24hr Monitoring</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware" class="nav-link p-0 text-white">Stream Software Optimization</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CreatorServices?hover=Studio" class="nav-link p-0 text-white">Studio Installation/Renovation</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/Contact" class="nav-link p-0 text-white">Hardware Sales</a></li>
                     </ul>
                 </div>
-
                 <div class="col mb-5 mb-lg-0">
                     <h5 class="colored2">Custom Creations</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CustomCreations"
-                                class="nav-link p-0 text-white">About</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/DreamPC"
-                                class="nav-link p-0 text-white">Personalized Dream Build</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/Contact"
-                                class="nav-link p-0 text-white">Hardware Sales</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CustomCreationsConsultation"
-                                class="nav-link p-0 text-white">Schedule Free Consultation</a>
-                        </li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CustomCreations" class="nav-link p-0 text-white">About</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/DreamPC" class="nav-link p-0 text-white">Personalized Dream Build</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/Contact" class="nav-link p-0 text-white">Hardware Sales</a></li>
+                        <li class="nav-item mb-2"><a href="https://www.ttrmsp.com/CustomCreationsConsultation" class="nav-link p-0 text-white">Schedule Free Consultation</a></li>
                     </ul>
                 </div>
-
             </div>
-
             <div class="row text-center justify-content-center">
-
                 <div class="px-4 py-2 mb-3 text-center">
                     <div class="col-lg-6 mx-auto">
-                        <button class="btn btn-outline-primary px-4" type="button"
-                            onclick="window.location.href = 'https://doctorsoup143.github.io/Portfolio-Website/';">Designed by Sean D.</button>
+                        <button class="btn btn-outline-primary px-4" type="button" onclick="window.location.href = 'https://doctorsoup143.github.io/Portfolio-Website/';">Designed by Sean D.</button>
                     </div>
                 </div>
-
             </div>
-
         </footer>
     </div>
-
 </body>
-
-
-
 </html>
