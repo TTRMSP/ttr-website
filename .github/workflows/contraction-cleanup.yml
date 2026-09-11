@@ -1,0 +1,106 @@
+name: Natural language contraction cleanup
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/contraction-cleanup.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.event.head_commit.message == 'Run contraction cleanup'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Replace formal negative phrases in site copy
+        shell: python
+        run: |
+          from pathlib import Path
+
+          replacements = [
+              ("DO NOT", "DON'T"),
+              ("Do not", "Don't"),
+              ("do not", "don't"),
+              ("DOES NOT", "DOESN'T"),
+              ("Does not", "Doesn't"),
+              ("does not", "doesn't"),
+              ("DID NOT", "DIDN'T"),
+              ("Did not", "Didn't"),
+              ("did not", "didn't"),
+              ("SHOULD NOT", "SHOULDN'T"),
+              ("Should not", "Shouldn't"),
+              ("should not", "shouldn't"),
+              ("COULD NOT", "COULDN'T"),
+              ("Could not", "Couldn't"),
+              ("could not", "couldn't"),
+              ("WOULD NOT", "WOULDN'T"),
+              ("Would not", "Wouldn't"),
+              ("would not", "wouldn't"),
+              ("WILL NOT", "WON'T"),
+              ("Will not", "Won't"),
+              ("will not", "won't"),
+              ("ARE NOT", "AREN'T"),
+              ("Are not", "Aren't"),
+              ("are not", "aren't"),
+              ("IS NOT", "ISN'T"),
+              ("Is not", "Isn't"),
+              ("is not", "isn't"),
+              ("WAS NOT", "WASN'T"),
+              ("Was not", "Wasn't"),
+              ("was not", "wasn't"),
+              ("WERE NOT", "WEREN'T"),
+              ("Were not", "Weren't"),
+              ("were not", "weren't"),
+              ("HAVE NOT", "HAVEN'T"),
+              ("Have not", "Haven't"),
+              ("have not", "haven't"),
+              ("HAS NOT", "HASN'T"),
+              ("Has not", "Hasn't"),
+              ("has not", "hasn't"),
+              ("CANNOT", "CAN'T"),
+              ("Cannot", "Can't"),
+              ("cannot", "can't"),
+          ]
+
+          changed = []
+          for path in Path('.').rglob('*.html'):
+              text = path.read_text(encoding='utf-8')
+              original = text
+              for old, new in replacements:
+                  text = text.replace(old, new)
+              if text != original:
+                  path.write_text(text, encoding='utf-8')
+                  changed.append(str(path))
+
+          print('Changed files:')
+          for path in changed:
+              print(f'  {path}')
+
+          banned = [old for old, _ in replacements]
+          remaining = []
+          for path in Path('.').rglob('*.html'):
+              text = path.read_text(encoding='utf-8')
+              for phrase in banned:
+                  if phrase in text:
+                      remaining.append((str(path), phrase))
+
+          if remaining:
+              for path, phrase in remaining:
+                  print(f'Remaining phrase: {phrase!r} in {path}')
+              raise SystemExit('Formal negative phrase verification failed')
+
+      - name: Commit cleanup and remove one-time workflow
+        run: |
+          rm .github/workflows/contraction-cleanup.yml
+          git config user.name "TTRMSP"
+          git config user.email "165070767+TTRMSP@users.noreply.github.com"
+          git add -A
+          git commit -m "Use natural contractions across site copy"
+          git push
