@@ -4,7 +4,6 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -12,20 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="css/styles.css" rel="stylesheet" />
-
     <meta name="author" content="DoctorSoup143">
-
-
-
-
-
-
-
-
-
-
-
-
     <meta name="theme-color" content="#07090d">
     <link rel="apple-touch-icon" sizes="180x180" href="https://www.ttrmsp.com/logos/TTRIcon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="https://www.ttrmsp.com/logos/TTRIcon.png">
@@ -46,6 +32,7 @@
         .page-hero{position:relative;overflow:hidden;padding:100px 0 86px;border-bottom:1px solid rgba(255,255,255,.07)}
         .page-hero:before{content:"";position:absolute;width:720px;height:720px;border-radius:50%;right:-230px;top:-330px;background:radial-gradient(circle,rgba(33,212,255,.14),rgba(33,212,255,0) 68%);pointer-events:none}
         .page-hero:after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;left:-230px;bottom:-330px;background:radial-gradient(circle,rgba(217,169,46,.1),rgba(217,169,46,0) 70%);pointer-events:none}
+        .hero-shell{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,430px);gap:34px;align-items:center;width:min(1600px,94vw);margin:0 auto}
         .hero-content{position:relative;z-index:2;max-width:1050px}
         .hero-title{font-size:clamp(3rem,6vw,6rem);line-height:.96;font-weight:900;letter-spacing:-.045em;margin:24px 0}
         .hero-copy{color:var(--ttr-muted);font-size:clamp(1.05rem,1.6vw,1.28rem);line-height:1.68;max-width:850px}
@@ -55,6 +42,17 @@
         .btn-ttr-primary:hover{color:#090b0e;transform:translateY(-2px);box-shadow:0 16px 40px rgba(217,169,46,.26)}
         .btn-ttr-secondary{color:#fff;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.035)}
         .btn-ttr-secondary:hover{color:var(--ttr-cyan);border-color:rgba(33,212,255,.5);transform:translateY(-2px)}
+        .founder-live-card{background:linear-gradient(180deg,rgba(18,25,34,.98),rgba(11,15,21,.98));border:1px solid rgba(255,255,255,.11);border-radius:18px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.34)}
+        .founder-live-copy{padding:22px 22px 18px}
+        .founder-live-copy h2{font-size:1.45rem;font-weight:900;line-height:1.08;margin:14px 0 10px}
+        .founder-live-copy p{color:var(--ttr-muted);line-height:1.58;margin:0}
+        .kick-player{aspect-ratio:16/9;background:#000;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+        .kick-player iframe{display:block;width:100%;height:100%;border:0}
+        .founder-live-footer{padding:16px 22px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+        .live-schedule{font-size:.82rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:#dce3ea}
+        .live-schedule i{color:#53fc18;margin-right:6px}
+        .kick-button{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:8px;background:#53fc18;color:#071006;text-decoration:none;font-weight:900;transition:.2s ease}
+        .kick-button:hover{color:#071006;transform:translateY(-1px);box-shadow:0 10px 28px rgba(83,252,24,.17)}
         .quick-strip{background:#0b0e13;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
         .quick-grid{display:grid;grid-template-columns:repeat(4,1fr)}
         .quick-item{padding:25px 22px;border-right:1px solid rgba(255,255,255,.07);text-align:center}
@@ -91,13 +89,20 @@
         .partner-band .section-heading{text-align:center;margin-left:auto;margin-right:auto}
         .partner-band .scroll-container{margin-top:30px}
         .partner-band .scroll{align-items:center}
+        .partner-band .scroll>a{display:inline-flex;align-items:center;height:50px;vertical-align:middle;text-decoration:none;transition:.18s ease}
+        .partner-band .scroll>a:hover{opacity:.78;transform:translateY(-1px)}
+        .partner-wordmark{font-weight:900;line-height:1;white-space:nowrap}
+        .partner-kick{font-size:2rem;letter-spacing:-.055em;color:#53fc18}
+        .partner-tiktok{font-size:1.22rem;color:#fff;gap:9px}
+        .partner-tiktok i{font-size:1.75rem}
         .final-cta{padding:90px 0;background:radial-gradient(circle at 50% 0%,rgba(33,212,255,.1),transparent 45%),#0c1016;text-align:center}
         .final-cta h2{font-size:clamp(2.2rem,4vw,4.2rem);font-weight:900;max-width:900px;margin:18px auto}
         .final-cta p{max-width:760px;margin:0 auto 30px;color:var(--ttr-muted);font-size:1.08rem}
         .ttr-creator footer{border-top:1px solid rgba(255,255,255,.06)}
-        @media(max-width:991px){.creator-grid{grid-template-columns:repeat(2,1fr)}.difference-grid{grid-template-columns:1fr}.quick-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:1199px){.hero-shell{grid-template-columns:minmax(0,1fr) 390px;gap:26px}.hero-title{font-size:clamp(3rem,5.3vw,5rem)}}
+        @media(max-width:991px){.hero-shell{grid-template-columns:1fr;width:min(960px,92vw)}.founder-live-card{max-width:720px}.creator-grid{grid-template-columns:repeat(2,1fr)}.difference-grid{grid-template-columns:1fr}.quick-grid{grid-template-columns:repeat(2,1fr)}}
         @media(max-width:767px){.service-grid,.creator-grid{grid-template-columns:1fr}}
-        @media(max-width:575px){.page-hero{padding:70px 0 60px}.hero-title{font-size:3.05rem}.hero-actions a{width:100%}.quick-grid{grid-template-columns:1fr}.quick-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.07)}.section-pad{padding:64px 0}}
+        @media(max-width:575px){.page-hero{padding:70px 0 60px}.hero-title{font-size:3.05rem}.hero-actions a{width:100%}.quick-grid{grid-template-columns:1fr}.quick-item{border-right:0;border-bottom:1px solid rgba(255,255,255,.07)}.section-pad{padding:64px 0}.founder-live-footer{align-items:stretch}.kick-button{width:100%}}
     </style>
 
     <script>
@@ -112,23 +117,23 @@
             }
         });
     </script>
-<link rel="stylesheet" href="css/footer.css">
-<title>IT Support for Creators &amp; Streamers | Total Tech Resources</title>
-<meta name="description" content="Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://www.ttrmsp.com/CreatorServices">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Total Tech Resources">
-<meta property="og:title" content="IT Support for Creators &amp; Streamers | Total Tech Resources">
-<meta property="og:description" content="Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.">
-<meta property="og:url" content="https://www.ttrmsp.com/CreatorServices">
-<meta property="og:image" content="https://www.ttrmsp.com/logos/TTRLogo.png">
-<meta property="og:image:alt" content="Total Tech Resources">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IT Support for Creators &amp; Streamers | Total Tech Resources">
-<meta name="twitter:description" content="Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.">
-<meta name="twitter:image" content="https://www.ttrmsp.com/logos/TTRLogo.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://www.ttrmsp.com/CreatorServices#webpage", "url": "https://www.ttrmsp.com/CreatorServices", "name": "IT Support for Creators & Streamers | Total Tech Resources", "description": "Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.", "inLanguage": "en", "isPartOf": {"@id": "https://www.ttrmsp.com/#website"}, "about": {"@id": "https://www.ttrmsp.com/#organization"}}]}</script>
+    <link rel="stylesheet" href="css/footer.css">
+    <title>IT Support for Creators &amp; Streamers | Total Tech Resources</title>
+    <meta name="description" content="Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://www.ttrmsp.com/CreatorServices">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Total Tech Resources">
+    <meta property="og:title" content="IT Support for Creators &amp; Streamers | Total Tech Resources">
+    <meta property="og:description" content="Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.">
+    <meta property="og:url" content="https://www.ttrmsp.com/CreatorServices">
+    <meta property="og:image" content="https://www.ttrmsp.com/logos/TTRLogo.png">
+    <meta property="og:image:alt" content="Total Tech Resources">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="IT Support for Creators &amp; Streamers | Total Tech Resources">
+    <meta name="twitter:description" content="Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.">
+    <meta name="twitter:image" content="https://www.ttrmsp.com/logos/TTRLogo.png">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.ttrmsp.com/CreatorServices#webpage","url":"https://www.ttrmsp.com/CreatorServices","name":"IT Support for Creators & Streamers | Total Tech Resources","description":"Get help with creator PCs, OBS, streaming software, storage, networking and studio technology. Explore support built around your creative workflow.","inLanguage":"en","isPartOf":{"@id":"https://www.ttrmsp.com/#website"},"about":{"@id":"https://www.ttrmsp.com/#organization"}}]}</script>
 </head>
 
 <body class="ttr-creator">
@@ -148,7 +153,7 @@
                             <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CustomCreations">About</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/DreamPC">Personalized Dream Build</a></li>
-                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/Contact">Hardware Sales</a></li>
+                            <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/HardwareSales">Hardware Sales</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item text-white" href="https://www.ttrmsp.com/CustomCreationsConsultation">Schedule Free Consultation</a></li>
                         </ul>
@@ -162,7 +167,7 @@
 
     <main>
         <section class="page-hero">
-            <div class="container">
+            <div class="hero-shell">
                 <div class="hero-content">
                     <span class="eyebrow"><i class="bi bi-broadcast"></i> Technology For Creators</span>
                     <h1 class="hero-title">CREATOR <span class="it-pop">IT</span>.<br><span class="gold">WITHOUT THE GUESSWORK.</span></h1>
@@ -173,6 +178,21 @@
                         <a class="btn-ttr-secondary" href="https://www.ttrmsp.com/Contact">General Contact</a>
                     </div>
                 </div>
+
+                <aside class="founder-live-card" aria-label="Founder live tech support stream">
+                    <div class="founder-live-copy">
+                        <span class="eyebrow"><i class="bi bi-broadcast-pin"></i> Founder Live Tech Support</span>
+                        <h2>100% FREE TECH SUPPORT, <span class="it-pop">LIVE.</span></h2>
+                        <p>Our founder is also a KICK Partner and streamer who provides 100% free tech support live every Saturday and Sunday.</p>
+                    </div>
+                    <div class="kick-player">
+                        <iframe src="https://player.kick.com/oldpeeps_ttrmsp?autoplay=false&amp;muted=true" title="OldPeeps TTRMSP live stream on KICK" scrolling="no" allowfullscreen="true"></iframe>
+                    </div>
+                    <div class="founder-live-footer">
+                        <span class="live-schedule"><i class="bi bi-circle-fill"></i> Saturday + Sunday</span>
+                        <a class="kick-button" href="https://kick.com/oldpeeps_ttrmsp" target="_blank" rel="noopener noreferrer">Watch on KICK <i class="bi bi-box-arrow-up-right ms-2"></i></a>
+                    </div>
+                </aside>
             </div>
         </section>
 
@@ -210,72 +230,42 @@
                     <h2>One creator technology partner. <span class="gold">From the PC to the studio.</span></h2>
                     <p>Bring your ideas, your workflow and the challenges getting in your way. TTR connects support, maintenance and optimization to help your setup work better for the content you want to create.</p>
                 </div>
-
                 <div class="service-grid">
                     <article class="service-block" id="TechSupport">
                         <div class="service-icon"><i class="bi bi-headset"></i></div>
                         <h3>24/7 Tech Support</h3>
                         <p>Your creative schedule can run well beyond business hours. TTR offers support around the clock for supported clients, so you have a team to turn to when your setup needs attention.</p>
-                        <ul>
-                            <li>PC, software and peripheral troubleshooting</li>
-                            <li>Support for complex creator workflows</li>
-                            <li>Escalation for harder technical issues</li>
-                        </ul>
+                        <ul><li>PC, software and peripheral troubleshooting</li><li>Support for complex creator workflows</li><li>Escalation for harder technical issues</li></ul>
                     </article>
-
                     <article class="service-block" id="DataProtection">
                         <div class="service-icon"><i class="bi bi-database-lock"></i></div>
                         <h3>Data Protection</h3>
                         <p>Raw footage, project files, settings, graphics and creator assets can represent years of work. TTR helps build a practical approach to protecting that data and improving recovery readiness.</p>
-                        <ul>
-                            <li>Backup planning and oversight</li>
-                            <li>Protection for important creator assets</li>
-                            <li>Recovery planning for critical data</li>
-                        </ul>
+                        <ul><li>Backup planning and oversight</li><li>Protection for important creator assets</li><li>Recovery planning for critical data</li></ul>
                     </article>
-
                     <article class="service-block" id="RemoteManagement">
                         <div class="service-icon"><i class="bi bi-display"></i></div>
                         <h3>Remote System Management</h3>
                         <p>Creator systems need maintenance just like business workstations, but downtime can interrupt content schedules. Remote management allows TTR to support and maintain systems without turning every issue into an onsite project.</p>
-                        <ul>
-                            <li>Remote administration and maintenance</li>
-                            <li>System health and configuration support</li>
-                            <li>Faster assistance without unnecessary travel</li>
-                        </ul>
+                        <ul><li>Remote administration and maintenance</li><li>System health and configuration support</li><li>Faster assistance without unnecessary travel</li></ul>
                     </article>
-
                     <article class="service-block" id="Monitoring">
                         <div class="service-icon"><i class="bi bi-activity"></i></div>
                         <h3>24/7 Monitoring</h3>
                         <p>Keep a closer eye on the systems behind your content. Monitoring gives TTR visibility into performance and health to help identify potential issues earlier.</p>
-                        <ul>
-                            <li>Continuous visibility into supported systems</li>
-                            <li>Proactive issue detection</li>
-                            <li>Better awareness of system health</li>
-                        </ul>
+                        <ul><li>Continuous visibility into supported systems</li><li>Proactive issue detection</li><li>Better awareness of system health</li></ul>
                     </article>
-
                     <article class="service-block" id="StreamSoftware">
                         <div class="service-icon"><i class="bi bi-sliders"></i></div>
                         <h3>Stream Software Optimization</h3>
                         <p>Streaming quality is a balance between hardware, encoder settings, software configuration and available bandwidth. TTR tunes those pieces together instead of relying on one generic preset.</p>
-                        <ul>
-                            <li>OBS configuration and troubleshooting</li>
-                            <li>Encoder and video setting optimization</li>
-                            <li>Performance tuning around your hardware and connection</li>
-                        </ul>
+                        <ul><li>OBS configuration and troubleshooting</li><li>Encoder and video setting optimization</li><li>Performance tuning around your hardware and connection</li></ul>
                     </article>
-
                     <article class="service-block" id="Studio">
                         <div class="service-icon"><i class="bi bi-camera-reels"></i></div>
                         <h3>Studio Installation & Renovation</h3>
                         <p>A creator studio works best when the technology is planned as one system. TTR helps organize the computers, displays, cameras, networking and supporting equipment around the way the space is actually used.</p>
-                        <ul>
-                            <li>New studio technology planning</li>
-                            <li>Existing studio cleanup and modernization</li>
-                            <li>Workflow, equipment and connectivity coordination</li>
-                        </ul>
+                        <ul><li>New studio technology planning</li><li>Existing studio cleanup and modernization</li><li>Workflow, equipment and connectivity coordination</li></ul>
                     </article>
                 </div>
             </div>
@@ -291,14 +281,7 @@
                 <div class="difference-grid">
                     <div class="difference-card">
                         <h3>What TTR can help coordinate</h3>
-                        <ul>
-                            <li>Creator PCs and workstation performance</li>
-                            <li>Streaming software and encoder configuration</li>
-                            <li>Networking and connectivity</li>
-                            <li>Storage and data protection</li>
-                            <li>Remote management and monitoring</li>
-                            <li>Studio technology and equipment planning</li>
-                        </ul>
+                        <ul><li>Creator PCs and workstation performance</li><li>Streaming software and encoder configuration</li><li>Networking and connectivity</li><li>Storage and data protection</li><li>Remote management and monitoring</li><li>Studio technology and equipment planning</li></ul>
                     </div>
                     <div class="difference-card">
                         <h3>Why that matters</h3>
@@ -319,29 +302,37 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-md-12 align-items-center scroll-container">
                         <div class="scroll">
-                            <img class="mx-5" src="logos/KTN.png" height="50px" width="auto" alt="KTN">
-                            <img class="mx-5" src="logos/Adidas.png" height="50px" width="auto" alt="Adidas">
+                            <a class="mx-5" href="https://ktn.gg/" target="_blank" rel="noopener noreferrer" aria-label="Visit KTN"><img src="logos/KTN.png" height="50px" width="auto" alt="KTN"></a>
+                            <a class="mx-5" href="https://adidaswrestling.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Adidas Wrestling"><img src="logos/Adidas.png" height="50px" width="auto" alt="Adidas Wrestling"></a>
                             <a class="mx-5" href="https://www.zennioptical.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Zenni Optical"><img src="https://static.zennioptical.com/marketing/logo/zenni-square-dark-teal-logo.png" height="50px" width="auto" alt="Zenni Optical"></a>
                             <a class="mx-5" href="https://www.selfrezcoffee.com/pages/always-give-back" target="_blank" rel="noopener noreferrer" aria-label="Visit SelfRez Coffee Always Give Back page"><img src="https://cdn.shopify.com/s/files/1/0693/4842/5973/files/Logo_5d4e53dc-4de2-4160-a711-d7f097ef77d4.png?v=1776870962" height="50px" width="auto" alt="SelfRez Coffee Company"></a>
-                            <img class="mx-5" src="logos/AGB.png" height="40px" width="auto" alt="Always Give Back">
+                            <a class="mx-5" href="https://alwaysgiveback.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Always Give Back"><img src="logos/AGB-veteran-charity.webp" height="50px" width="auto" alt="Always Give Back Military Veterans Charity"></a>
+                            <a class="mx-5 partner-wordmark partner-kick" href="https://kick.com/oldpeeps_ttrmsp" target="_blank" rel="noopener noreferrer" aria-label="Watch OldPeeps TTRMSP on Kick">KICK</a>
+                            <a class="mx-5 partner-wordmark partner-tiktok" href="https://www.tiktok.com/@oldpeeps" target="_blank" rel="noopener noreferrer" aria-label="Follow OldPeeps on TikTok"><i class="bi bi-tiktok"></i><span>TikTok</span></a>
 
-                            <img class="mx-5" src="logos/KTN.png" height="50px" width="auto" alt="KTN">
-                            <img class="mx-5" src="logos/Adidas.png" height="50px" width="auto" alt="Adidas">
+                            <a class="mx-5" href="https://ktn.gg/" target="_blank" rel="noopener noreferrer" aria-label="Visit KTN"><img src="logos/KTN.png" height="50px" width="auto" alt="KTN"></a>
+                            <a class="mx-5" href="https://adidaswrestling.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Adidas Wrestling"><img src="logos/Adidas.png" height="50px" width="auto" alt="Adidas Wrestling"></a>
                             <a class="mx-5" href="https://www.zennioptical.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Zenni Optical"><img src="https://static.zennioptical.com/marketing/logo/zenni-square-dark-teal-logo.png" height="50px" width="auto" alt="Zenni Optical"></a>
                             <a class="mx-5" href="https://www.selfrezcoffee.com/pages/always-give-back" target="_blank" rel="noopener noreferrer" aria-label="Visit SelfRez Coffee Always Give Back page"><img src="https://cdn.shopify.com/s/files/1/0693/4842/5973/files/Logo_5d4e53dc-4de2-4160-a711-d7f097ef77d4.png?v=1776870962" height="50px" width="auto" alt="SelfRez Coffee Company"></a>
-                            <img class="mx-5" src="logos/AGB.png" height="40px" width="auto" alt="Always Give Back">
+                            <a class="mx-5" href="https://alwaysgiveback.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Always Give Back"><img src="logos/AGB-veteran-charity.webp" height="50px" width="auto" alt="Always Give Back Military Veterans Charity"></a>
+                            <a class="mx-5 partner-wordmark partner-kick" href="https://kick.com/oldpeeps_ttrmsp" target="_blank" rel="noopener noreferrer" aria-label="Watch OldPeeps TTRMSP on Kick">KICK</a>
+                            <a class="mx-5 partner-wordmark partner-tiktok" href="https://www.tiktok.com/@oldpeeps" target="_blank" rel="noopener noreferrer" aria-label="Follow OldPeeps on TikTok"><i class="bi bi-tiktok"></i><span>TikTok</span></a>
 
-                            <img class="mx-5" src="logos/KTN.png" height="50px" width="auto" alt="KTN">
-                            <img class="mx-5" src="logos/Adidas.png" height="50px" width="auto" alt="Adidas">
+                            <a class="mx-5" href="https://ktn.gg/" target="_blank" rel="noopener noreferrer" aria-label="Visit KTN"><img src="logos/KTN.png" height="50px" width="auto" alt="KTN"></a>
+                            <a class="mx-5" href="https://adidaswrestling.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Adidas Wrestling"><img src="logos/Adidas.png" height="50px" width="auto" alt="Adidas Wrestling"></a>
                             <a class="mx-5" href="https://www.zennioptical.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Zenni Optical"><img src="https://static.zennioptical.com/marketing/logo/zenni-square-dark-teal-logo.png" height="50px" width="auto" alt="Zenni Optical"></a>
                             <a class="mx-5" href="https://www.selfrezcoffee.com/pages/always-give-back" target="_blank" rel="noopener noreferrer" aria-label="Visit SelfRez Coffee Always Give Back page"><img src="https://cdn.shopify.com/s/files/1/0693/4842/5973/files/Logo_5d4e53dc-4de2-4160-a711-d7f097ef77d4.png?v=1776870962" height="50px" width="auto" alt="SelfRez Coffee Company"></a>
-                            <img class="mx-5" src="logos/AGB.png" height="40px" width="auto" alt="Always Give Back">
+                            <a class="mx-5" href="https://alwaysgiveback.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Always Give Back"><img src="logos/AGB-veteran-charity.webp" height="50px" width="auto" alt="Always Give Back Military Veterans Charity"></a>
+                            <a class="mx-5 partner-wordmark partner-kick" href="https://kick.com/oldpeeps_ttrmsp" target="_blank" rel="noopener noreferrer" aria-label="Watch OldPeeps TTRMSP on Kick">KICK</a>
+                            <a class="mx-5 partner-wordmark partner-tiktok" href="https://www.tiktok.com/@oldpeeps" target="_blank" rel="noopener noreferrer" aria-label="Follow OldPeeps on TikTok"><i class="bi bi-tiktok"></i><span>TikTok</span></a>
 
-                            <img class="mx-5" src="logos/KTN.png" height="50px" width="auto" alt="KTN">
-                            <img class="mx-5" src="logos/Adidas.png" height="50px" width="auto" alt="Adidas">
+                            <a class="mx-5" href="https://ktn.gg/" target="_blank" rel="noopener noreferrer" aria-label="Visit KTN"><img src="logos/KTN.png" height="50px" width="auto" alt="KTN"></a>
+                            <a class="mx-5" href="https://adidaswrestling.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Adidas Wrestling"><img src="logos/Adidas.png" height="50px" width="auto" alt="Adidas Wrestling"></a>
                             <a class="mx-5" href="https://www.zennioptical.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Zenni Optical"><img src="https://static.zennioptical.com/marketing/logo/zenni-square-dark-teal-logo.png" height="50px" width="auto" alt="Zenni Optical"></a>
                             <a class="mx-5" href="https://www.selfrezcoffee.com/pages/always-give-back" target="_blank" rel="noopener noreferrer" aria-label="Visit SelfRez Coffee Always Give Back page"><img src="https://cdn.shopify.com/s/files/1/0693/4842/5973/files/Logo_5d4e53dc-4de2-4160-a711-d7f097ef77d4.png?v=1776870962" height="50px" width="auto" alt="SelfRez Coffee Company"></a>
-                            <img class="mx-5" src="logos/AGB.png" height="40px" width="auto" alt="Always Give Back">
+                            <a class="mx-5" href="https://alwaysgiveback.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Always Give Back"><img src="logos/AGB-veteran-charity.webp" height="50px" width="auto" alt="Always Give Back Military Veterans Charity"></a>
+                            <a class="mx-5 partner-wordmark partner-kick" href="https://kick.com/oldpeeps_ttrmsp" target="_blank" rel="noopener noreferrer" aria-label="Watch OldPeeps TTRMSP on Kick">KICK</a>
+                            <a class="mx-5 partner-wordmark partner-tiktok" href="https://www.tiktok.com/@oldpeeps" target="_blank" rel="noopener noreferrer" aria-label="Follow OldPeeps on TikTok"><i class="bi bi-tiktok"></i><span>TikTok</span></a>
                         </div>
                     </div>
                 </div>
@@ -359,58 +350,34 @@
     </main>
 
     <footer class="ttr-footer" id="site-footer" aria-label="Site footer">
-  <div class="ttr-footer__inner">
-    <div class="ttr-footer__grid">
-      <div class="ttr-footer__brand">
-        <a class="ttr-footer__logo" href="https://www.ttrmsp.com/" aria-label="Total Tech Resources home"><img src="logos/TTRLogo.png" alt="Total Tech Resources" width="180" loading="lazy"></a>
-        <p>Your <span class="ttr-footer__it">IT</span> department.<br>Your creative potential.<br>Your next custom build.</p>
-        <a class="ttr-footer__email" href="mailto:support@ttrmsp.com">support@ttrmsp.com</a>
+      <div class="ttr-footer__inner">
+        <div class="ttr-footer__grid">
+          <div class="ttr-footer__brand">
+            <a class="ttr-footer__logo" href="https://www.ttrmsp.com/" aria-label="Total Tech Resources home"><img src="logos/TTRLogo.png" alt="Total Tech Resources" width="180" loading="lazy"></a>
+            <p>Your <span class="ttr-footer__it">IT</span> department.<br>Your creative potential.<br>Your next custom build.</p>
+            <a class="ttr-footer__email" href="mailto:support@ttrmsp.com">support@ttrmsp.com</a>
+          </div>
+          <nav class="ttr-footer__column" aria-label="Footer business services">
+            <h2>Business</h2>
+            <ul><li><a href="https://www.ttrmsp.com/BusinessServices">Business Services</a></li><li><a href="https://www.ttrmsp.com/Consultation">Free <span class="ttr-footer__it">IT</span> Assessment</a></li><li><a href="https://www.ttrmsp.com/HardwareSales">Hardware Sales</a></li></ul>
+            <details><summary>Explore services</summary><ul class="ttr-footer__details"><li><a href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport">24/7 Tech Support</a></li><li><a href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection">Data Protection</a></li><li><a href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport">Remote System Management</a></li><li><a href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring">24hr Monitoring</a></li></ul></details>
+          </nav>
+          <nav class="ttr-footer__column" aria-label="Footer creator services">
+            <h2>Creators</h2>
+            <ul><li><a href="https://www.ttrmsp.com/CreatorServices">Creator Services</a></li><li><a href="https://www.ttrmsp.com/CreatorContact">Creator Contact</a></li></ul>
+            <details><summary>Explore services</summary><ul class="ttr-footer__details"><li><a href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport">24/7 Tech Support</a></li><li><a href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection">Data Protection</a></li><li><a href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement">Remote System Management</a></li><li><a href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring">24hr Monitoring</a></li><li><a href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware">Stream Software Optimization</a></li><li><a href="https://www.ttrmsp.com/CreatorServices?hover=Studio">Studio Installation / Renovation</a></li></ul></details>
+          </nav>
+          <nav class="ttr-footer__column" aria-label="Footer custom creations">
+            <h2>Custom PCs</h2>
+            <ul><li><a href="https://www.ttrmsp.com/CustomCreations">Custom Creations</a></li><li><a href="https://www.ttrmsp.com/DreamPC">Dream PC Builder</a></li><li><a href="https://www.ttrmsp.com/CustomCreationsConsultation">Free Build Consultation</a></li><li><a href="https://www.ttrmsp.com/VeteranLounge">Veteran Gaming Lounges</a></li></ul>
+          </nav>
+        </div>
+        <div class="ttr-footer__bottom">
+          <p>© 2026 Total Tech Resources</p>
+          <nav aria-label="Footer company links"><a href="https://www.ttrmsp.com/About">About TTR</a><a href="https://www.ttrmsp.com/Contact">Contact</a><a href="https://www.ttrmsp.com/Charity">Charity</a></nav>
+          <a class="ttr-footer__credit" href="https://doctorsoup143.github.io/Portfolio-Website/">Designed by Sean D.</a>
+        </div>
       </div>
-      <nav class="ttr-footer__column" aria-label="Footer business services">
-        <h2>Business</h2>
-        <ul>
-          <li><a href="https://www.ttrmsp.com/BusinessServices">Business Services</a></li>
-          <li><a href="https://www.ttrmsp.com/Consultation">Free <span class="ttr-footer__it">IT</span> Assessment</a></li>
-          <li><a href="https://www.ttrmsp.com/HardwareSales">Hardware Sales</a></li>
-        </ul>
-        <details><summary>Explore services</summary><ul class="ttr-footer__details">
-          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=TechSupport">24/7 Tech Support</a></li>
-          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=DataProtection">Data Protection</a></li>
-          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=RemoteSupport">Remote System Management</a></li>
-          <li><a href="https://www.ttrmsp.com/BusinessServices?hover=Monitoring">24hr Monitoring</a></li>
-        </ul></details>
-      </nav>
-      <nav class="ttr-footer__column" aria-label="Footer creator services">
-        <h2>Creators</h2>
-        <ul>
-          <li><a href="https://www.ttrmsp.com/CreatorServices">Creator Services</a></li>
-          <li><a href="https://www.ttrmsp.com/CreatorContact">Creator Contact</a></li>
-        </ul>
-        <details><summary>Explore services</summary><ul class="ttr-footer__details">
-          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=TechSupport">24/7 Tech Support</a></li>
-          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=DataProtection">Data Protection</a></li>
-          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=RemoteManagement">Remote System Management</a></li>
-          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=Monitoring">24hr Monitoring</a></li>
-          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=StreamSoftware">Stream Software Optimization</a></li>
-          <li><a href="https://www.ttrmsp.com/CreatorServices?hover=Studio">Studio Installation / Renovation</a></li>
-        </ul></details>
-      </nav>
-      <nav class="ttr-footer__column" aria-label="Footer custom creations">
-        <h2>Custom PCs</h2>
-        <ul>
-          <li><a href="https://www.ttrmsp.com/CustomCreations">Custom Creations</a></li>
-          <li><a href="https://www.ttrmsp.com/DreamPC">Dream PC Builder</a></li>
-          <li><a href="https://www.ttrmsp.com/CustomCreationsConsultation">Free Build Consultation</a></li>
-          <li><a href="https://www.ttrmsp.com/VeteranLounge">Veteran Gaming Lounges</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="ttr-footer__bottom">
-      <p>© 2026 Total Tech Resources</p>
-      <nav aria-label="Footer company links"><a href="https://www.ttrmsp.com/About">About TTR</a><a href="https://www.ttrmsp.com/Contact">Contact</a><a href="https://www.ttrmsp.com/Charity">Charity</a></nav>
-      <a class="ttr-footer__credit" href="https://doctorsoup143.github.io/Portfolio-Website/">Designed by Sean D.</a>
-    </div>
-  </div>
-</footer>
+    </footer>
 </body>
 </html>
